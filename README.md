@@ -4,12 +4,12 @@
 
 
 Language used: Python
-Basically created a global dictionary, than then gets passed into read_index.py
+parsing.py takees care of tokenization and creates a large dictionary that then gets passed into read_index.py.
 
 Tokenizaton occurs in parsing.py, position is saved, termid is saved, and the docno all passed into a tuple
-in the "index_dictionary" it takes in "word" as a key, and the value will be the token tuple. So every word will essentially have a tuple, and multiple tuples if it is found more than once.
 
-index_diciontary then passed into read_index.py
+In the "index_dictionary" it takes in "word" as a key, and the value will be the token tuple. So every word will essentially have a tuple, and multiple tuples if it is found more than once.
+
 
 Read_index takes care of term and doc commands to count total terms and also lists number of docs containing the term as requested.
 
